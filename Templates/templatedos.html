@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<title>Bienvenidos a mi página</title>
+	<link rel="stylesheet"  href="{{url_for('static', filename='style.css')}}">	
+</head>
+
+<body>
+	{% include 'vNavBar.html' %}
+<header>
+
+<div class="overlay">
+<h1>Bienvenid@ </h1> 
+<h2>Fecha  {{ fecha }} </h3>
+<br>
+</div>
+</header>
+<center>
+	<h1>Biografia {{ nombre }}</h1> 
+<div id="ext">
+  <div id="int">
+    <img id="imgs" src="https://www.soycarmin.com/__export/1591241280785/sites/debate/img/2020/06/03/avatar_3_crop1591241236156.jpg_423682103.jpg" style="max-width:45%;width:auto;height:auto;">
+     <p style="text-align: justify; ">Mi nombre completo es Karina Hernández Blancarte,nací en Guanajuato,GTO el 19 de Noviembre de 1998.Estudie en la primaria Miguel Hidalgo,posteriormente estudié en la telesecundaria Miguel De Cervantes Saavedra, mi preparatia la realice en el Colegio de Estudios Cientificos y Tecnologicos del Estado de Guanjauto graduandome con la especialidad de Soporte y mantenimiento de equipo de cómputo, actualamente  me encuentro cursando el séptimo semestre de la carrera de Ingeniería en sistemas en el Instituto Tecnológico Superior de Guanajuato.Me considero una persona responsable y trabajadora, me propongo metas y lucho dia a dia por alcanzarlas, mi meta a corto plazo es graduarme de ingienieria y poder encontrar un trabajo que me apasione.</p>
+
+
+</center>
+  </div>
+</div>
+<style type="text/css">
+	.p{
+		background-color: #D7DBDD ;
+		width: 30%
+	}
+</style>
+<center> <p class="p"> Direccion {{direccion}}<p></center>
+<center><p class="p">Telefono {{telefono}}</p></center>
+<center><p class="p">Correo {{correo}}</p></center>
+</body>
+</html>
+<footer class="text-center text-white">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <!--Facebook-->
+            <a 
+            class="btn tbn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-facebook"></i></a>
+            <!--Twitter-->  
+            <a 
+            class="btn tbn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-twitter"></i></a>   
+         
+            <a 
+            class="btn tbn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-telephone-fill"></i></a>        
+            <a 
+            class="btn tbn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-google"></i></a>   
+            <a 
+            class="btn tbn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-chat-dots-fill"></i></a>          
+        </section>
+    </div>
+<div class="text-center text-dark p-3" style="background-color:#FA8072;">
+<i class="bi bi-badge-cc"></i>2021:
+<a class="text-dark" href="#">Karina Hernández Blancarte</a>
+</div>  
+</footer>
